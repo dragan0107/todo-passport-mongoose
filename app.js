@@ -125,11 +125,16 @@ app.get("/list", (req, res) => {
 
     if (req.isAuthenticated()) {
         User.findById(req.user._id, function(err, results) {
-            res.render("list", {
-                htmlList: results.items,
-                htmlTitle: dateToday,
-                htmlYear: year
-            });
+            if (err) {
+                console.log(err);
+            } else {
+                res.render("list", {
+                    htmlList: results.items,
+                    htmlTitle: dateToday,
+                    htmlYear: year
+                });
+            }
+
         });
     } else {
         res.redirect("/");
