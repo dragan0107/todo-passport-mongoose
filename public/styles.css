@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+body {
+    background-color: transparent;
+}
+
+html {
+    background-color: #E4E9FD;
+    background-image: -webkit-linear-gradient(65deg, #ff4646 50%, #E4E9FD 50%);
+    min-height: 1000px;
+    font-family: 'Architects Daughter', cursive;
+    font-weight: bold;
+}
+
+h1 {
+    color: #fff;
+    padding: 10px;
+}
+
+.title {
+    text-align: center;
+    color: #ff4646;
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    max-width: 400px;
+    margin: 50px auto;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+#heading {
+    background-color: #ff4646;
+    text-align: center;
+}
+
+.item {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #F1F1F1;
+}
+
+.item:last-child {
+    border-bottom: 0;
+}
+
+input:checked+p {
+    text-decoration: line-through;
+    text-decoration-color: #ff4646;
+    color: grey;
+}
+
+input[type="checkbox"] {
+    margin: 20px;
+}
+
+p {
+    margin: 0;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 200;
+    color: #00204a;
+}
+
+form {
+    text-align: center;
+    margin-left: 20px;
+}
+
+.addButton {
+    min-height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border-color: transparent;
+    background-color: #ff4646;
+    color: #fff;
+    font-size: 30px;
+    padding-bottom: 6px;
+    border-width: 0;
+}
+
+.buttonDiv {
+    text-align: center;
+}
+
+.logOutBtn {
+    background: rgb(238, 133, 13);
+    padding: 10px 30px;
+    border: none;
+    border-radius: 100px;
+    color: white;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 1.2rem;
+}
+
+.logOutBtn:hover {
+    background: rgb(238, 58, 13);
+}
+
+input[type="text"] {
+    text-align: center;
+    height: 60px;
+    top: 10px;
+    margin-top: auto;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    font-weight: 200;
+    width: 313px;
+    font-family: 'Architects Daughter', cursive;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    box-shadow: inset 0 -3px 0 0 #ff4646;
+}
+
+::placeholder {
+    color: grey;
+    opacity: 1;
+    font-family: 'Architects Daughter', cursive;
+}
+
+footer {
+    color: white;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+    background-color: transparent;
+}
+
+.form-signin .checkbox {
+    font-weight: 400;
+}
+
+.form-signin .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.form-signin .form-control:focus {
+    z-index: 2;
+}
+
+.form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.loginH1 {
+    color: rgba(0, 0, 0, 0.3)
+}
