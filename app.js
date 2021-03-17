@@ -9,7 +9,7 @@ const passportLocalMongoose = require("passport-local-mongoose");
 const Schema = mongoose.Schema;
 
 const app = express();
-const port = 1717;
+const port = process.env.PORT || 1717;
 
 app.use(session({
     secret: "Drip's darkest secret eeeeeeheheheh",
