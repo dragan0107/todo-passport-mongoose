@@ -22,7 +22,7 @@ app.use(passport.session());
 
 
 //mongoose connection
-mongoose.connect("mongodb://localhost:27017/todoRebuildDB", { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect("mongodb+srv://drip-admin:drip-test@cluster0.jr1bn.mongodb.net/todoRebuildDB", { useNewUrlParser: true, useUnifiedTopology: true });
 
 const dateToday = dateFormat("fullDate");
 
