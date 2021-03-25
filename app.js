@@ -1,3 +1,4 @@
+dotenv = require("dotenv").config();
 const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
@@ -7,10 +8,10 @@ const session = require("express-session");
 const passport = require("passport");
 const passportLocalMongoose = require("passport-local-mongoose");
 const Schema = mongoose.Schema;
-
 const app = express();
 const port = process.env.PORT || 1717;
-
+const user = process.env.DB_HOST;
+const pass = process.env.DB_PASS;
 app.use(session({
     secret: "Drip's darkest secret eeeeeeheheheh",
     resave: false,
@@ -22,7 +23,7 @@ app.use(passport.session());
 
 
 //mongoose connection
-mongoose.connect("mongodb+srv://drip-admin:drip-test@cluster0.jr1bn.mongodb.net/todoRebuildDB", { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(`mongodb+srv://${user}${pass}@cluster0.jr1bn.mongodb.net/todoRebuildDB`, { useNewUrlParser: true, useUnifiedTopology: true });
 
 const dateToday = dateFormat("fullDate");
 
